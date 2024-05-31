@@ -33,6 +33,10 @@ public class User {
     @TableField("age")
     private Integer age;
 
+    @ApiModelProperty(value = "爱好")
+    @TableField("likes")
+    private Integer likes;
+
     public User() {
     }
 
