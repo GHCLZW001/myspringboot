@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /mySpringBoot
+  compression:
+    enabled: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ghc_user?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 18000
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 5
+        min-idle: 0
+
+
+
+
